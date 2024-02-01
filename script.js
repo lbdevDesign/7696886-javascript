@@ -2,6 +2,18 @@
 const listeMots = ['Cachalot', 'Pétunia', 'Serviette']
 let score = 0
 
+for (i = 0; i < listeMots.length; i++) {
+    let motUtilisateur = prompt('Entrez le mot : ' + listeMots[i])
+    if (motUtilisateur === listeMots[i]) {
+        score++
+    }
+console.log("Votre score est de " + score + " sur " + (i + 1))
+
+}
+
+
+
+
 // Déclaration de la variable contenant le mot saisi par l'utilisateur
 // Le prompt sert à afficher une popup demandant à l'utilisateur de saisir un mot
 let motUtilisateur = prompt('Entrez le mot : ' + listeMots[0])
